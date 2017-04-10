@@ -1,0 +1,251 @@
+/* **************************************
+                 ALL
+************************************** */
+
+*{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+/* **************************************
+         ETIQUETAS PRINCIPALES
+************************************** */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+}
+
+h1 {
+   font-size: 2em;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 30px;
+}
+ main {
+  width: 100%;
+ }
+
+ i {
+   color: red;
+   font-size: 1.5em;
+ }
+
+ section {
+   padding: 18px 0 0 0;
+ }
+
+ footer {
+   width: 100%;
+   height: 30px;
+   background-color: #333;
+ }
+
+/* **************************************
+                  TOP
+************************************** */
+.top {
+  width: 100%;
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  background-color: #333;
+}
+
+.top-menu {
+    padding: 20px;
+    margin:0;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    align-self: center;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.top-menu a{
+    color: white;
+    font-size: 1.3em;
+    text-decoration: none;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+@keyframes top-menu {
+  0% {
+    color: white;
+  }
+  100% {
+    color: red;
+  }
+}
+.top-menu a:hover {
+    animation-name: top-menu;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@media (max-width: 480px) {
+  .top-menu {
+  font-size: 0.85em;
+  }
+}
+
+/* **************************************
+                HERO
+************************************** */
+
+.hero-wrap {
+  width: 100%;
+  height: 600px;
+  background-image: url(http://placehold.it/1920x600);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
+}
+
+.hero {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  text-transform: none;
+}
+
+.hero-title {
+  padding-top: 140px;
+}
+
+.hero-desc {
+  padding-top: 20px;
+}
+
+.hero-p {
+padding-top: 50px;
+}
+
+.hero a{
+  border: solid;
+  border-radius: 15px;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 1.1em;
+  color: black;
+}
+
+@keyframes boton-hero {
+  0% {
+    color: black;
+  }
+  100% {
+    color: red;
+  }
+}
+.hero a:hover {
+    animation-name: boton-hero;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+/* **************************************
+         SECTION: Yo
+************************************** */
+
+.yo {
+  padding: 0 40px;
+  margin: 0 auto;
+  font-size: 1.15em;
+  max-width: 1000px;
+}
+
+.yo img {
+  border-radius: 100%;
+  justify-content: center;
+  border-radius: 100%;
+  padding-bottom: 20px;
+}
+
+/* **************************************
+         SECTION: Trabajos
+************************************** */
+.grupo-items {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1400px;
+}
+
+.item {
+  padding: 0px;
+  display: inline-block;
+  overflow: hidden;
+  margin: 5px;
+}
+
+.item img {
+  vertical-align: middle;
+  transition: all .2s ease;
+}
+
+.item img:hover {
+  transform: scale(1.3);
+}
+
+
+
+/* **************************************
+         SECTION: Contacto
+************************************** */
+
+.form {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.input {
+  padding: 10px 35px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: thin;
+  border-color: gray;
+  margin: 20px auto;
+  width: 60%;
+  display: block;
+  text-align: left;
+  font-size: 0.9em;
+  font-weight: lighter;
+}
+
+textarea {
+  height: 150px;
+}
+
+.input[type=submit] {
+  text-align: center;
+  box-shadow: 5px 5px 2px #d9d9d9;
+  max-width: 200px;
+}
+
+/* **************************************
+               Footer
+************************************** */
+
+footer {
+  padding-top: 30px;
+}
+footer p {
+  color: white;
+  font-size: 0.8em;
+  padding-top: 5px;
+}
